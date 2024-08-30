@@ -21,7 +21,7 @@ $display-value: block, flex, grid, none;
 @include make-display();
 
 @each $breakpoint, $demention in $breakpoints {
-    @media (max-with: ($demention - 0.02px)) {
+    @media (max-width: ($demention - 0.02px)) {
          @include make-display($breakpoint);
     }
 }
