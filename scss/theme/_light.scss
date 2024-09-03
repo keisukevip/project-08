@@ -6,6 +6,8 @@ html {
 
     --body-bg: #F6F6F6;
     --header-bg-color: #eee;
+    --footer-bg-color: var(--header-bg-color);
+
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.20);
     --top-act-group-separate: #EDEDF6;
@@ -15,10 +17,36 @@ html {
     --dropdown-shadow-color: rgba(200, 200, 200, 0.40);
     --top-menu-border-color: #D2D1D6;
     
+    // sidebar
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.40);
 
-    @include abstracts.breakpoint(lg) {
+    // category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #FFF;
+    --cate-item-tile-color: #000;
+
+    // filter btn 
+    --filter-btn-color : #6C6C72;
+    --filter-btn-bg: #fff;
+
+    // product card
+    --product-card-bg: #fff;
+    --product-card-shadow: rgba(237, 237, 246, 0.20);
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    // filter-form 
+    --filter-form-bg: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.40);
+    --filter-form-tag-bg: #F8F8FB;
+    
+    @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);
+    }
+    
+    @include abstracts.screen(md) {
+        --cate-item-bg: #FFF;
     }
 
 
