@@ -7,15 +7,22 @@ html {
     --body-bg: #F6F6F6;
     --header-bg-color: #eee;
     --footer-bg-color: var(--header-bg-color);
+    --top-act-group-separate: #EDEDF6;
 
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.20);
     --top-act-group-separate: #EDEDF6;
+    
+    // header
+    --header-act-dropdown-bg: #fff;
+    --header-act-dropdown-shadow: rgba(200, 200, 200, 0.40);
+    --header-act-dropdown-border-color: #D2D1D6;
 
     // dropdown
     --dropdown-bg-color: #fff;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.40);
     --top-menu-border-color: #D2D1D6;
+
     
     // sidebar
     --sidebar-bg: #fff;
@@ -38,15 +45,57 @@ html {
     // filter-form 
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.40);
-    --filter-form-tag-bg: #F8F8FB;
+    --form-tag-bg: #F8F8FB;
+
+    // auth 
+    --auth-content-bg: #fff;
+
+    // form
+    --form-placeholder-color: #D2D1D6;
+
+    // product detail 
+    --product-detail-bg: #fff;
+    --product-detail-info-bg: #F6F6F6;
+    --product-detail-info-content-bg: #fff;
+    --product-detail-tag-bg: #EDEDF6;
+    
+    // breadcrumb
+    --breadcrumbs-bg: #F6F6F6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.20);
+
+    // search bar
+    --search-bar-bg: #fff;
+
+    // review card
+    --review-card-bg: #FAFAFD;
+
+    // text content
+    --text-content-hr-bg: #ebebeb;
+
+
+    // checkout
+    --checkout-breadcrumbs-bg: #fff;
+    --checkout-cart-info-bg: #fffl
+    --checkout-cart-info-shadow: rgba(237, 237, 246, 0.20);
+    --checkout-border-color: #D2D1D6;
+    --checkout-gift-shadow: rgba(237, 237, 246, 0.20);
     
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);
+        
     }
     
     @include abstracts.screen(md) {
         --cate-item-bg: #FFF;
+        --product-detail-bg: #FAFAFD;
+        --breadcrumbs-bg: #fff;
+        --review-card-bg: #fff;
+        --product-detail-info-bg: #fff;
+    }
+
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #fff;
     }
 
 

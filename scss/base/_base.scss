@@ -4,6 +4,9 @@
     box-sizing: border-box;
  }
 
+ * {
+  -webkit-tap-highlight-color: transparent;
+ }
 
 
  html {
@@ -31,11 +34,10 @@
    cursor: pointer;
  }
 
- a, img, button, input, textarea, select {
+ a, img, button, label, input, textarea, select {
    font-family: inherit;
    color: inherit;
    outline: none;
-   -webkit-tap-highlight-color: transparent;
    border: none;
    padding: 0;
  }
@@ -53,4 +55,12 @@
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+ }
+
+ i, em {
+  font-style: italic;
+ }
+
+ b, strong {
+  font-weight: 600;
  }
