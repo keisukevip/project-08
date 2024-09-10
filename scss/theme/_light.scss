@@ -12,6 +12,8 @@ html {
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.20);
     --top-act-group-separate: #EDEDF6;
+
+    --webkit-text-fill-color: #000;
     
     // header
     --header-act-dropdown-bg: #fff;
@@ -52,6 +54,9 @@ html {
 
     // form
     --form-placeholder-color: #D2D1D6;
+    --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
+    --form-select-dialog-bg: #fff;
+    --form-option-hover-bg: #ebebeb;
 
     // product detail 
     --product-detail-bg: #fff;
@@ -75,11 +80,16 @@ html {
 
     // checkout
     --checkout-breadcrumbs-bg: #fff;
-    --checkout-cart-info-bg: #fffl
+    --checkout-cart-info-bg: #fff;
     --checkout-cart-info-shadow: rgba(237, 237, 246, 0.20);
     --checkout-border-color: #D2D1D6;
     --checkout-gift-shadow: rgba(237, 237, 246, 0.20);
     
+
+    // dialog
+    --dialog-bg: #fff;
+    --dialog-shadow: rgba(237, 237, 246, 0.20);
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);
